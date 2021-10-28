@@ -6,7 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { GaugeModule } from 'angular-gauge';
@@ -17,6 +17,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
 import { DetailsComponent } from './components/details/details.component';
+import { CommentFormComponent } from './components/comment-form/comment-form.component';
+import { GameTabsComponent } from './components/game-tabs/game-tabs.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { DetailsComponent } from './components/details/details.component';
     AppComponent,
     SearchBarComponent,
     HomeComponent,
-    DetailsComponent
+    DetailsComponent,
+    CommentFormComponent,
+    GameTabsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +36,7 @@ import { DetailsComponent } from './components/details/details.component';
     BrowserAnimationsModule, 
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     GaugeModule.forRoot(),
     MatFormFieldModule,
     MatSelectModule,
