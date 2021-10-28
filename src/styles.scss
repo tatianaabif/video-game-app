@@ -1,14 +1,17 @@
 
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 3px;
     background-color: #151515;
+    background: linear-gradient(180deg, rgba(21,21,21,0.989233193277311) 51%, rgba(40,41,85,1) 96%);
+    transition: background-color 1s;
     padding-top: 60px;
     height: 100%;
 }
 
 body * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;

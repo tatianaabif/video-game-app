@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,13 @@ import { Injectable } from '@angular/core';
 })
 export class ServerService {
 
-  constructor() { }
+  private _url: string = "http://localhost:3000";
+
+  constructor(private http :HttpClient ) { }
+  
+  postComment(
+    comment: any) {
+      return this.http.post(this._url+"/api",comment);
+    }
 }
+

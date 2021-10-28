@@ -6,7 +6,7 @@
 
 ::ng-deep {
     .mat-form-field-infix {
-        background-color: #3f51b5;
+        background-color: #313C7B;
     }
 
     .mat-select-value,
@@ -46,12 +46,12 @@
     overflow: hidden;
     border-radius: 5px;
     background-color: #1a1919;
-    box-shadow: 4px 3px 8px 0px rgb(58 150 194 / 20%);
+    box-shadow: 4px 3px 8px 0px rgb(103 58 183 / 20%);
     transition-duration: 0.3s;
     cursor: pointer;
 
     &:hover {
-        box-shadow: 4px 3px 11px 6px rgb(58 150 194 / 46%);
+        box-shadow: 4px 3px 11px 6px rgb(103 58 183 / 46%);
         transform: translateY(-3px);
     }
 

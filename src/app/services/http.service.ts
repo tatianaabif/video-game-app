@@ -10,6 +10,8 @@ import { APIResponse, Game } from '../models';
 })
 export class HttpService {
 
+  
+
   constructor(private http: HttpClient) { }
 
   getGameList(

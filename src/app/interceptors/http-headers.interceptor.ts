@@ -10,6 +10,8 @@ export class HttpHeadersInterceptor implements HttpInterceptor {
     req: HttpRequest<any>,
     next: HttpHandler
     ): Observable<HttpEvent<any>> {
+        if(req.url.includes("http://localhost:3000"))
+            return next.handle(req)
     req = req.clone({
         setHeaders: {
         'x-rapidapi-key': '18348f5cd7mshb5e547d890808f3p11ca03jsn92ce31d796ee',
