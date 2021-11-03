@@ -43,7 +43,7 @@ export class CommentFormComponent implements OnInit {
         Comment : this.commentForm.value["comment"],
         GameId : this.GameId
       };
-      this._service.postComment(comment).subscribe(data => console.log("look in Nodejs..."))
+      this._service.postComment(comment).subscribe(data => console.log("look in your database..."))
     }
   }
 

@@ -1,6 +1,9 @@
 <div class="comment-box">
     <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
         <div>
+            <p>Enter a comment :</p>
+        </div>
+        <div>
             <input id="name" type="text" formControlName="name" placeholder="Your name">
         </div>
         <div>
